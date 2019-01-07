@@ -1,10 +1,7 @@
 package com.next.parkomator.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.apache.spark.sql.Row;
 
 import java.io.Serializable;
@@ -13,6 +10,7 @@ import java.io.Serializable;
 @Setter
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 public class SensorData implements Serializable {
     Long id;
     Double lat, lng;
