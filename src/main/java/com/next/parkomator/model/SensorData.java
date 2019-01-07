@@ -16,9 +16,7 @@ import java.io.Serializable;
 public class SensorData implements Serializable {
     Long id;
     Double lat, lng;
-    @JsonIgnore
     boolean free;
-    @JsonIgnore
     long timestamp;
     int distance;
 
